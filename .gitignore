@@ -1,0 +1,39 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment and sensitive keys
+.env
+.env.local
+.env.*.local
+
+# Temporary files and uploads
+CampusWire-Ready-Folder/uploads/*.bin
+CampusWire-Ready-Folder/uploads/*.tmp
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Log files
+*.log
+logs/
+
+# EXCLUDE ALL PAPER WORK, DRAFTS, PRESENTATIONS & ACADEMIC REPORTS
+*Research_Paper*
+*Patent_Proposal*
+*presentation*
+*slide_by_slide*
+*theory_and_project_report*
+*zip_package_guide*
+*.tex
