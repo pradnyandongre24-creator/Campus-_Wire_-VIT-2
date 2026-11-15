@@ -179,6 +179,8 @@
       border-color: var(--card-border) !important;
       box-shadow: var(--card-shadow) !important;
       backdrop-filter: blur(16px);
+      position: relative !important;
+      z-index: 40 !important;
     }
 
     #appNavTabs {
@@ -186,6 +188,8 @@
       border-color: var(--card-border) !important;
       box-shadow: var(--card-shadow) !important;
       backdrop-filter: blur(16px);
+      position: relative !important;
+      z-index: 20 !important;
     }
 
     #roleBanner {
@@ -431,7 +435,7 @@
     </div>
 
     <!-- 2. INSTITUTIONAL AUTHENTICATED HEADER CARD (Matches Gateway Branding) -->
-    <header class="bg-white border-2 border-slate-200 rounded-3xl p-6 shadow-sm mb-6 flex flex-col md:flex-row md:items-center justify-between gap-5">
+    <header class="relative z-40 bg-white border-2 border-slate-200 rounded-3xl p-6 shadow-sm mb-6 flex flex-col md:flex-row md:items-center justify-between gap-5">
       
       <!-- Brand Crest & Session Title -->
       <div class="flex items-center gap-4">
@@ -466,14 +470,14 @@
         </div>
 
         <!-- 1-Click Persona Switcher Dropdown (Teacher Evaluation Mode) -->
-        <div class="relative">
+        <div class="relative z-50">
           <button onclick="togglePersonaDropdown()" id="personaDropdownBtn" class="px-3.5 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 border border-slate-200 text-xs font-bold text-slate-700 flex items-center gap-1.5 transition-all shadow-sm active:scale-95">
             <span>⚡</span>
             <span>Switch Persona</span>
             <span class="text-[10px]">▼</span>
           </button>
           
-          <div id="personaDropdown" class="hidden absolute right-0 mt-2 w-64 bg-white border-2 border-slate-200 rounded-3xl shadow-2xl z-50 p-3 space-y-1.5">
+          <div id="personaDropdown" class="hidden absolute right-0 mt-2 w-64 bg-white/98 backdrop-blur-2xl border-2 border-slate-200 rounded-3xl shadow-2xl z-50 p-3 space-y-1.5">
             <div class="text-[10px] font-extrabold uppercase tracking-wider text-slate-400 px-2 py-1">Quick Switch Persona</div>
             <button onclick="switchPersonaDirectly('student');" class="w-full text-left p-2.5 rounded-2xl hover:bg-blue-50 border border-transparent hover:border-blue-200 flex items-center gap-2.5 transition-all">
               <span class="text-xl">🎓</span>
@@ -504,14 +508,14 @@
         </div>
 
         <!-- Live Color Grading Preset Selector -->
-        <div class="relative">
+        <div class="relative z-50">
           <button onclick="toggleThemeDropdown()" id="themeDropdownBtn" class="px-3.5 py-2 rounded-xl bg-gradient-to-r from-indigo-50 to-purple-50 hover:from-indigo-100 hover:to-purple-100 border border-indigo-200 text-xs font-bold text-indigo-700 flex items-center gap-1.5 transition-all shadow-sm active:scale-95" title="Switch Dashboard Color Grading">
             <span>🎨</span>
             <span id="currentThemeLabel">Aurora Indigo</span>
             <span class="text-[10px]">▼</span>
           </button>
           
-          <div id="themeDropdown" class="hidden absolute right-0 mt-2 w-72 bg-white/95 backdrop-blur-xl border-2 border-slate-200 rounded-3xl shadow-2xl z-50 p-3 space-y-1.5">
+          <div id="themeDropdown" class="hidden absolute right-0 mt-2 w-72 bg-white/98 backdrop-blur-2xl border-2 border-slate-200 rounded-3xl shadow-2xl z-50 p-3 space-y-1.5">
             <div class="text-[10px] font-extrabold uppercase tracking-wider text-slate-400 px-2 py-1">Dashboard Color Grading</div>
             <button onclick="applyColorTheme('aurora')" class="w-full text-left p-2.5 rounded-2xl hover:bg-indigo-50 border border-transparent hover:border-indigo-200 flex items-center gap-3 transition-all">
               <span class="w-5 h-5 rounded-full bg-gradient-to-tr from-indigo-600 via-indigo-500 to-sky-400 shadow-sm shrink-0 border border-white"></span>
@@ -557,7 +561,7 @@
     </header>
 
     <!-- 3. SLEEK HORIZONTAL NAVIGATION TAB BAR -->
-    <nav id="appNavTabs" class="bg-white border-2 border-slate-200 rounded-3xl p-2 shadow-sm mb-6 flex items-center gap-1.5 overflow-x-auto text-xs font-bold">
+    <nav id="appNavTabs" class="relative z-20 bg-white border-2 border-slate-200 rounded-3xl p-2 shadow-sm mb-6 flex items-center gap-1.5 overflow-x-auto text-xs font-bold">
       <!-- All 10 Institutional Hub Tabs Available for Evaluation -->
       <button onclick="setView('feed')" id="navFeed" class="role-tab role-student role-faculty role-admin flex items-center gap-2 px-4 py-2.5 rounded-2xl transition-all bg-slate-900 text-white shadow-sm whitespace-nowrap">
         <span class="text-base">⌂</span> Notice Feed & AI
