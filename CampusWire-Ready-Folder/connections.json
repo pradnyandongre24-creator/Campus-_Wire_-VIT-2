@@ -1,0 +1,28 @@
+{
+  "student": {
+    "college": {
+      "email": "student@campus.edu",
+      "demo": true,
+      "connectedAt": 1789934000000
+    },
+    "personal": {
+      "email": "student@gmail.com",
+      "demo": true,
+      "connectedAt": 1789934000000
+    }
+  },
+  "faculty": {
+    "college": {
+      "email": "faculty@campus.edu",
+      "demo": true,
+      "connectedAt": 1789934000000
+    }
+  },
+  "admin": {
+    "college": {
+      "email": "admin@campus.edu",
+      "demo": true,
+      "connectedAt": 1789934000000
+    }
+  }
+}

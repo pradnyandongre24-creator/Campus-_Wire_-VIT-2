@@ -1,0 +1,32 @@
+{
+  "4a9ff2141b2d404b410981878a05c3ac435c15b85daa4a6bf544c1f9ca29dcb6": {
+    "user": {
+      "username": "student",
+      "role": "student",
+      "audience": "students",
+      "displayName": "Alex Student",
+      "department": "Computer Science & Engineering"
+    },
+    "expires": 1794828025888
+  },
+  "2b1089f9dec4809d48ef1a12279690a071d842592243bd0e060166a159d88869": {
+    "user": {
+      "username": "student",
+      "role": "student",
+      "audience": "students",
+      "displayName": "Alex Student",
+      "department": "Computer Science & Engineering"
+    },
+    "expires": 1794828049973
+  },
+  "8cf81a02c6605771c9d399f20da21f94fa1889126d14283996de4a30c575bc29": {
+    "user": {
+      "username": "student",
+      "role": "student",
+      "audience": "students",
+      "displayName": "Alex Student",
+      "department": "Computer Science & Engineering"
+    },
+    "expires": 1794839122277
+  }
+}

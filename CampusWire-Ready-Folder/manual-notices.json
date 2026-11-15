@@ -1,0 +1,20 @@
+[
+  {
+    "id": "notice-demo-1",
+    "source": "file",
+    "title": "Official Academic Calendar & Circular 2026-2027",
+    "description": "Official schedule of examinations, holidays, and semester start dates approved by the institute director.",
+    "audience": "all",
+    "fileName": "academic_calendar_2026.pdf",
+    "stored": "demo-academic_calendar_2026.pdf",
+    "mimeType": "application/pdf",
+    "size": 1024,
+    "createdBy": "faculty",
+    "createdAt": "2026-09-20T08:00:00.000Z",
+    "date": "2026-09-20T08:00:00.000Z",
+    "category": "academic",
+    "confidence": 100,
+    "reason": "Published directly by institute",
+    "priority": "normal"
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "name": "campuswire-complete",
+  "version": "3.0.0",
+  "description": "Smart institute notice hub with dual Gmail, role access and multithreaded TCP transfer",
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server.js",
+    "setup": "node setup.js",
+    "client": "node tcp-client.js",
+    "test": "node test.js"
+  },
+  "engines": { "node": ">=20" },
+  "license": "MIT"
+}
